@@ -1,9 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Moe Szyslak's io page</title>
-</head>
-<body>
-  <p>hello there!</p>
-</body>
+
+<html lang="en-us">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimal-ui" name="viewport">
+    <meta name="keywords" content="Moe Szyslak, Moe GitHub">
+    <meta name="description" content="Moe Szyslak's Github">
+
+    <title>Coming Soon</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+        color: #757575;
+        padding: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0;
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        text-align: center;
+      }
+
+      h1, p, a {
+        margin: 8px;
+      }
+
+      a.github {
+        text-decoration: none;
+        color: #1e88e5;
+      }
+
+      /* mobile */
+      @media (max-width: 960px) {
+        .coming-soon {
+          margin-top: -72px;
+          font-size: 36px;
+        }
+      }
+
+      /* desktop */
+      @media(min-width: 960px) {
+        .coming-soon {
+          margin-top: -32px;
+          font-size: 64px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Hello There!</h1>
+    <p>My name is Moe Szyslak (obviously an alias) and i &lt;3 working on the web.</p>
+    <a class="github" href="http://github.com/moe-szyslak">GitHub</a>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script>
+      ;(function() {
+        $('body').css({
+          'height': $(window).height() + 'px'
+        });
+
+        $(window).resize(function () {
+          $('body').css({
+            'height': $(window).height() + 'px'
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>
