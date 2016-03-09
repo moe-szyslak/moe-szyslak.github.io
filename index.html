@@ -10,82 +10,71 @@
 
     <title>let Moe cure what ills ya</title>
     <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 
     <style>
+      /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+      html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+      * { box-sizing: border-box; }
+
       body {
-        font-family: 'Lato', sans-serif;
-        color: #757575;
-        padding: 0;
-        padding-left: 16px;
-        padding-right: 16px;
-        margin: 0;
-        display: flex;
-        display: -webkit-flex;
-        flex-direction: column;
-        -webkit-flex-direction: column;
-        justify-content: center;
-        -webkit-justify-content: center;
-        align-items: center;
-        -webkit-align-items: center;
+        position: relative;
+        color: #34495e;
+        font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+        -webkit-font-smoothing: antialiased !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+        min-height: 100vh;
+        font-size: 16px;
         text-align: center;
+        padding: 0 16px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
       }
 
-      h1, p, a {
-        margin: 8px;
+      h1 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: 8px;
+        font-weight: normal;
       }
 
-      a.github {
+      p {
+        font-weight: normal;
+        margin: 0;
+        font-size: 1em;
+        margin-bottom: 8px;
+      }
+
+      .github {
+        color: #31a8e6;
         text-decoration: none;
-        color: #1e88e5;
-      }
-
-      /* mobile */
-      @media (max-width: 960px) {
-        .coming-soon {
-          margin-top: -72px;
-          font-size: 36px;
-        }
-      }
-
-      /* desktop */
-      @media(min-width: 960px) {
-        .coming-soon {
-          margin-top: -32px;
-          font-size: 64px;
-        }
+        font-size: 1em;
+        margin: 0;
+        margin-top: 8px;
       }
     </style>
   </head>
 
   <body>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-55178149-3', 'auto');
-      ga('send', 'pageview');
-    </script>
-
     <h1>Hello There!</h1>
-    <p>My name is Moe Szyslak (obviously an alias) and i &lt;3 working on the web.</p>
-    <a class="github" href="http://github.com/moe-szyslak">GitHub</a>
-
-    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script>
-      ;(function() {
-        $('body').css({
-          'height': $(window).height() + 'px'
-        });
-
-        $(window).resize(function () {
-          $('body').css({
-            'height': $(window).height() + 'px'
-          });
-        });
-      })();
-    </script>
+    <p>My name is Moe Szyslak (obviously an alias) and I ❤ working on the web.</p>
+    <p>JavaScript rookie. Huge fan of React, Vue and things in-between.</p>
+    <p><small>Ironically this page does not contain any JavaScript.</small></p>
+    <a class="github" href="https://github.com/moe-szyslak">GitHub</a>
   </body>
 </html>
