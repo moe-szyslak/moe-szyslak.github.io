@@ -26,28 +26,12 @@
         font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
         -webkit-font-smoothing: antialiased !important;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-        min-height: 100vh;
         font-size: 16px;
         text-align: center;
         padding: 0 16px;
+        /* not flexing to avoid the scroll on iOS Safari */
+        padding-top: 12em;
         overflow: hidden;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
       }
 
       h1 {
