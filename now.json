@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "utopiaio",
+  "alias": ["eyassu.dev", "utopiaio.now.sh"],
+  "builds": [
+    { "src": "index.html", "use": "@now/static" }
+    { "src": "PIFA/**", "use": "@now/static" }
+  ],
+  "regions": ["bru1"],
+  "public": false
+}
